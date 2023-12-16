@@ -1,4 +1,4 @@
-let coins = 2345500;
+let coins = 10345500;
 
 setInterval(function() {
     let elem = document.getElementById('embed-acs');

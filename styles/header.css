@@ -1,0 +1,23 @@
+header {
+    background-color: #000000cc;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #e5e5e5;
+    font-family: Nunito;
+    margin: 0px 10px;
+}
+
+header img {
+    max-width:80px;
+}

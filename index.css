@@ -1,0 +1,29 @@
+@import url(styles/header.css);
+@import url(styles/classes/embed.css);
+@import url(styles/classes/product.css);
+@import url(styles/section.css);
+
+html, body {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom left, #0060f5, #6b30cb);
+    min-height: 100vh;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    animation: gradient 8s ease infinite;
+    color: #e5e5e5;
+    font-family: Nunito;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}

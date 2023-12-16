@@ -1,0 +1,11 @@
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff80;
+}

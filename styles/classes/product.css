@@ -1,0 +1,145 @@
+/* ESTILIZAÇÃO DO PRODUTO */
+.product {
+    background-color: #000000cc;
+    border-radius: 15px;
+    padding: 30px;
+    color: #e5e5e5;
+    font-family: Nunito;
+    display: flex;
+    min-width: 300px;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#products-div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product #whatsapp {
+    text-decoration: none;
+    background: linear-gradient(to bottom left, #1dd301, #08a800);
+    color: #e5e5e5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product h2 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.product h3 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    animation: colorChangeBest 5s infinite;
+}
+
+.product h4 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    animation: colorChangeEconomic 5s infinite;
+}
+
+.product h5 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    animation: colorChangeJob 5s infinite;
+}
+
+#economic {
+    border: 5px solid;
+    border-image-source: linear-gradient(to bottom, #20ff5f, #04b126);
+    border-image-slice: 1;
+}
+
+#best {
+    border: 5px solid;
+    border-image-source: linear-gradient(to bottom, gold, orange);
+    border-image-slice: 1;
+}
+
+#job {
+    border: 5px solid;
+    border-image-source: linear-gradient(to bottom, #ff2020, #b10404);
+    border-image-slice: 1;
+}
+
+.product ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.product ul li {
+    margin: 8px 0px;
+}
+
+.product h1 {
+    font-size: 50px;
+    background: linear-gradient(to bottom left, #0060f5, #6822da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+
+.product #whatsapp:active {
+    transform: scale(1.1);
+    animation: shrink 0.3s forwards;
+}
+
+@keyframes shrink {
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorChangeBest {
+    0%   {color: yellow;}
+    100% {color: orange;}
+}
+
+@keyframes colorChangeEconomic {
+    0%   {color: #20ff5f;}
+    100% {color: #04b126;}
+}
+
+@keyframes colorChangeJob {
+    0%   {color: #ff2020;}
+    100% {color: #b10404;}
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+@media (hover: hover) {
+    .product:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (hover: none) {
+    .product:hover {
+        transform: none;
+    }
+}

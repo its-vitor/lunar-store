@@ -1,0 +1,93 @@
+/* ESTILIZAÇÃO DO EMBED */
+.embed {
+    background-color: #000000cc;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 30px;
+    color: #e5e5e5;
+    font-family: Nunito;
+    display: flex;
+    gap: 50px;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ESTILIZAÇÃO DA IMAGEM DO EMBED */
+.embed .image-embed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ESTILIZAÇÃO DO SUPERTITLE */
+.embed div .supertitle {
+    display: flex;
+    gap: 50px; /* adiciona um espaço de 10px entre os itens */
+    justify-content: center;
+}
+
+/* REMOVENDO O ESPAÇAMENTO ENTRE OS PARÁGRAFOS */
+.embed div .supertitle p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* SUPER TÍTULO DA EMBED */
+.embed h1 {
+    font-size: 50px;
+    background: linear-gradient(to bottom left, #0060f5, #6822da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+
+.embed img {
+    width: 35vh;
+    object-fit: cover;
+}
+
+
+.embed div .description {
+    display: flex;
+    flex-direction: column;
+}
+
+/* TÍTULO DA EMBED */
+.embed h2 {
+    font-size: 30px;
+}
+
+.embed p {
+    font-size: 18px;
+}
+
+.embed a {
+    background: linear-gradient(to bottom left, #f1ce81, #d07924);
+    text-decoration: none;
+    color: #e5e5e5;
+    padding: 10px 20%;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+}
+  
+@media only screen and (max-width: 1000px) {
+    .embed {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .embed img {
+      max-width: 80%;
+    }
+    .embed #python {
+        max-width: 60%;
+    }
+    .embed div .supertitle {
+        gap: 20px;
+    }
+}
